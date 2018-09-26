@@ -1,0 +1,40 @@
+* {
+	margin: 0; padding: 0;
+}
+button {
+    width: 70px;
+    height: 26px;
+    font-size: 13px !important;
+    text-align: center;
+    padding: 0px 6px !important;
+}
+table.table h3 {
+	padding: 10px;
+}
+.detail-project {
+	margin: 20px 20px;
+	background: #fff;
+}
+.detail-project p {
+	color: black;
+}
+.detail-project p input {
+	border: none;
+	padding-left: 10px;
+	background: whitesmoke;
+	width: 200px;
+}
+.table-detail tr th{
+	width: 300px;
+}
+.table-detail td {
+	width: 300px;
+}
+.form-control {
+	width: 300px;
+	display: inline-block;
+	font-size: 14px;
+}
+#dropdown {
+	width: 150px;
+}
