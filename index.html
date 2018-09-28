@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sufee Admin - HTML5 Admin Template</title>
+    <title>Danh sách dự án đầu tư</title>
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -68,29 +68,35 @@
                     <li class="menu-item-has-children active dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Quản lý dự án đầu tư</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-table"></i><a href="tables-basic.html">Basic Table</a></li>
-                            <li><i class="fa fa-table"></i><a href="tables-data.html">Data Table</a></li>
+                            <li><i class="fa fa-table"></i><a href="tables-basic.html">Danh sách các dự án đầu tư</a></li>
+                            <li><i class="fa fa-table"></i><a href="tables-data.html">Thêm mới dự án đầu tư</a></li>
+                            <li><i class="fa fa-table"></i><a href="tables-data.html">Sửa thông tin dự án đầu tư</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Báo cáo</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Basic Form</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Advanced Form</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Báo cáo theo quy định</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Báo cáo theo nhu cầu quản lý</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Thống kê số liệu</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Quản lý hệ thống</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Basic Form</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Advanced Form</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Quản lý nhóm người dùng</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Quản lý người dùng</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Quản lý tham số hệ thống</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Quản lý nhật ký</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Sao lưu khôi phục dữ liệu</a></li>
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Tiện ích</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Basic Form</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Advanced Form</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Thông báo nhắc việc</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Các câu hỏi thường gặp</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Tài liệu hướng dẫn sử dụng</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -235,7 +241,7 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Dashboard</h1>
+                        <h1>Tìm kiếm</h1>
                     </div>
                 </div>
             </div>
@@ -243,9 +249,9 @@
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Table</a></li>
-                            <li class="active">Basic table</li>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Quản lý dự án đầu tư</a></li>
+                            <li class="active">Danh sách các dự án đầu tư</li>
                         </ol>
                     </div>
                 </div>
@@ -253,250 +259,321 @@
         </div>
 
         <div class="content mt-3">
-            <div class="animated fadeIn">
-                <div class="row">
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <strong class="card-title">Basic Table</strong>
+            <div class="row">
+                <div class="col">
+                    <form action="" class="form-inline">
+                        <div class="form-group input-group-sm mr-3">
+                            <input type="text" class="form-control" placeholder="Mã dự án">
                         </div>
-                        <div class="card-body">
-                            <table class="table">
-                              <thead>
-                                <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">First</th>
-                                  <th scope="col">Last</th>
-                                  <th scope="col">Handle</th>
-                              </tr>
-                          </thead>
-                          <tbody>
+                        <div class="form-group input-group-sm mr-3">
+                            <input type="text" class="form-control" placeholder="Tên dự án">
+
+                        </div>
+                        <div class="form-group input-group-sm mr-3">
+                            <input type="text" class="form-control" placeholder="Số văn bản">
+
+                        </div>
+                        <select name="selectSm" id="select-advance" class="form-control-sm form-control d-none">
+                            <option value="0">Please select</option>
+                            <option value="1">Option #1</option>
+                            <option value="2">Option #2</option>
+                            <option value="3">Option #3</option>
+                            <option value="4">Option #4</option>
+                            <option value="5">Option #5</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 mt-3">
+                    <input type="checkbox" name="" id="search-advance" data-hieu="select-advance" onclick="openAdvance(this);"> <label for="search-advance" >Tìm kiếm nâng cao</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-sm btn-primary"> <i class="fa fa-search mr-1"></i> Tìm kiếm</button>
+                    <button class="btn btn-sm"><i class="fa fa-refresh"></i> Reset</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center table-hover mt-1">
+                    <h2>Danh sách dự án đầu tư</h2>
+                    <table class="table table-bordered table-sm m-3">
+                        <thead>
+                        <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Mã dự án</th>
+                            <th scope="col" style="width: 30%">Tên dự án</th>
+                            <th scope="col">Nhóm dự án</th>
+                            <th scope="col" style="width: 15%">Trạng thái dự án</th>
+                            <th scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td><a href="">Otto</a></td>
+                            <td>@mdo</td>
+                            <td>Đã hoàn thành</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm mr-1"><i class="fa fa-star"></i>&nbsp; Thêm</button>
+                                <button type="button" class="btn btn-success btn-sm mr-1"><i class="fa fa-magic"></i>&nbsp; Sửa</button>
+                                <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-times"></i>&nbsp;Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td><a href="">Otto</a></td>
+                            <td>@fat</td>
+                            <td>Đã hoàn thành</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm mr-1"><i class="fa fa-star"></i>&nbsp; Thêm</button>
+                                <button type="button" class="btn btn-success btn-sm mr-1"><i class="fa fa-magic"></i>&nbsp; Sửa</button>
+                                <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-times"></i>&nbsp;Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Jacob</td>
+                            <td><a href="">Otto</a></td>
+                            <td>@fat</td>
+                            <td>Đã hoàn thành</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm mr-1"><i class="fa fa-star"></i>&nbsp; Thêm</button>
+                                <button type="button" class="btn btn-success btn-sm mr-1"><i class="fa fa-magic"></i>&nbsp; Sửa</button>
+                                <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-times"></i>&nbsp;Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Jacob</td>
+                            <td><a href="">Otto</a></td>
+                            <td>@fat</td>
+                            <td>Đã hoàn thành</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm mr-1"><i class="fa fa-star"></i>&nbsp; Thêm</button>
+                                <button type="button" class="btn btn-success btn-sm mr-1"><i class="fa fa-magic"></i>&nbsp; Sửa</button>
+                                <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-times"></i>&nbsp;Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Jacob</td>
+                            <td><a href="">Otto</a></td>
+                            <td>@fat</td>
+                            <td>Đã hoàn thành</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-sm mr-1"><i class="fa fa-star"></i>&nbsp; Thêm</button>
+                                <button type="button" class="btn btn-success btn-sm mr-1"><i class="fa fa-magic"></i>&nbsp; Sửa</button>
+                                <button type="button" class="btn btn-danger btn-sm"><i class="fa fa-times"></i>&nbsp;Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Tổng số mục: 1000</th>
+                            <td colspan="2">Số mục hiển thị: 20</td>
+                            <td colspan="2">Trang: 01</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="detai">
+                        <h2 class="text-center mt-3">Thông tin chi tiết dự án</h2>
+                        <table class="table table-sm mt-3">
+                            <tbody>
                             <tr>
-                              <th scope="row">1</th>
-                              <td>Mark</td>
-                              <td>Otto</td>
-                              <td>@mdo</td>
-                          </tr>
-                          <tr>
-                              <th scope="row">2</th>
-                              <td>Jacob</td>
-                              <td>Thornton</td>
-                              <td>@fat</td>
-                          </tr>
-                          <tr>
-                              <th scope="row">3</th>
-                              <td>Larry</td>
-                              <td>the Bird</td>
-                              <td>@twitter</td>
-                          </tr>
-                      </tbody>
-                  </table>
-                        </div>
+                                <td>Mã dự án:</td>
+                                <td>FA-3454</td>
+                                <td style="width: 15%">Trạng thái dự án</td>
+                                <td style="width: 40%">
+                                    <select class="form-control-sm form-control d-inline ml-2" style="width: 30%">
+                                        <option value="0">Please select</option>
+                                        <option value="1">Option #1</option>
+                                        <option value="2">Option #2</option>
+                                        <option value="3">Option #3</option>
+                                        <option value="4">Option #4</option>
+                                        <option value="5">Option #5</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tên dự án:</td>
+                                <td>Dự án nhà ở đô thị</td>
+                                <td>Nhóm dự án</td>
+                                <td>
+                                    <select class="form-control-sm form-control d-inline ml-2" style="width: 30%">
+                                        <option value="0">Please select</option>
+                                        <option value="1">Option #1</option>
+                                        <option value="2">Option #2</option>
+                                        <option value="3">Option #3</option>
+                                        <option value="4">Option #4</option>
+                                        <option value="5">Option #5</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tên chủ đầu tư</td>
+                                <td style="width: 30%">
+                                    <select class="form-control-sm form-control d-inline ml-2" style="width: 50%">
+                                        <option value="0">Please select</option>
+                                        <option value="1">Option #1</option>
+                                        <option value="2">Option #2</option>
+                                        <option value="3">Option #3</option>
+                                        <option value="4">Option #4</option>
+                                        <option value="5">Option #5</option>
+                                    </select>
+                                <button type="button" class="btn btn-primary btn-sm ml-3">Thêm mới nhanh</button>
+                                </td>
+                                <td>Cấp phê duyệt</td>
+                                <td>
+                                    <select class="form-control-sm form-control d-inline ml-2" style="width: 50%">
+                                        <option value="0">Please select</option>
+                                        <option value="1">Option #1</option>
+                                        <option value="2">Option #2</option>
+                                        <option value="3">Option #3</option>
+                                        <option value="4">Option #4</option>
+                                        <option value="5">Option #5</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hình thức đầu tư</td>
+                                <td>
+                                    <select class="form-control-sm form-control d-inline ml-2" style="width: 50%">
+                                        <option value="0">Please select</option>
+                                        <option value="1">Option #1</option>
+                                        <option value="2">Option #2</option>
+                                        <option value="3">Option #3</option>
+                                        <option value="4">Option #4</option>
+                                        <option value="5">Option #5</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Lĩnh vực đầu tư</td>
+                                <td>
+                                    <select class="form-control-sm form-control d-inline ml-2" style="width: 50%">
+                                        <option value="0">Please select</option>
+                                        <option value="1">Option #1</option>
+                                        <option value="2">Option #2</option>
+                                        <option value="3">Option #3</option>
+                                        <option value="4">Option #4</option>
+                                        <option value="5">Option #5</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Địa điểm thực hiện</td>
+                                <td>Phường Ngọc Khánh</td>
+                                <td>Quận/Huyện</td>
+                                <td>
+                                    <select class="form-control-sm form-control d-inline ml-2" style="width: 50%">
+                                        <option value="0">Please select</option>
+                                        <option value="1">Option #1</option>
+                                        <option value="2">Option #2</option>
+                                        <option value="3">Option #3</option>
+                                        <option value="4">Option #4</option>
+                                        <option value="5">Option #5</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tỉnh/Thành phố</td>
+                                <td colspan="3">
+                                    <select class="form-control-sm form-control d-inline ml-2" style="width: 17%">
+                                        <option value="0">Please select</option>
+                                        <option value="1">Option #1</option>
+                                        <option value="2">Option #2</option>
+                                        <option value="3">Option #3</option>
+                                        <option value="4">Option #4</option>
+                                        <option value="5">Option #5</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Thời gian thực hiện/Hoạt động</td>
+                                <td colspan="3">
+                                    <select class="form-control-sm" id="exampleFormControlSelect1" style="width: 10%">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                    Năm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    Đã báo cáo đánh giá giám sát đầu tư
+                                    <div class="form-check d-inline ml-3">
+                                        <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <strong class="card-title">Table Dark</strong>
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-dark">
-                              <thead>
-                                <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">First</th>
-                                  <th scope="col">Last</th>
-                                  <th scope="col">Handle</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope="row">1</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">2</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>@fat</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">3</th>
-                                  <td>Larry</td>
-                                  <td>the Bird</td>
-                                  <td>@twitter</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                        </div>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table-sm table-bordered table-primary">
+                        <thead>
+                        <tr class="text-center">
+                            <th scope="col" style="width: 20%">Mục tiêu dự án</th>
+                            <th scope="col">Quy mô dự án</th>
+                            <th scope="col">Tổng mức đầu tư</th>
+                            <th scope="col">Phân kỳ thực hiện</th>
+                            <th scope="col">V/v cấp phép xây dựng</th>
+                            <th scope="col">V/v giao cho thuê đất và các thông tin về môi trường</th>
+                            <th scope="col">Văn bản, giấy tờ đi kèm</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="min-height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="min-height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                            <td style="height: 150px;"></td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
+            </div>
+            <!--<div class="row">-->
+                <!--<div class="col">-->
+                    <!--<div class="handling mt-3 text-center">-->
+                        <!--<h4>Xử lý của cấp có thẩm quyền</h4>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <strong class="card-title">Table Head</strong>
-                        </div>
-                        <div class="card-body">
-                            <table class="table">
-                              <thead class="thead-dark">
-                                <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">First</th>
-                                  <th scope="col">Last</th>
-                                  <th scope="col">Handle</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope="row">1</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">2</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>@fat</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">3</th>
-                                  <td>Larry</td>
-                                  <td>the Bird</td>
-                                  <td>@twitter</td>
-                                </tr>
-                              </tbody>
-                            </table>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <strong class="card-title">Stripped Table</strong>
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-striped">
-                              <thead>
-                                <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">First</th>
-                                  <th scope="col">Last</th>
-                                  <th scope="col">Handle</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope="row">1</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">2</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>@fat</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">3</th>
-                                  <td>Larry</td>
-                                  <td>the Bird</td>
-                                  <td>@twitter</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <strong class="card-title">Bordered Table</strong>
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-bordered">
-                              <thead>
-                                <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">First</th>
-                                  <th scope="col">Last</th>
-                                  <th scope="col">Handle</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope="row">1</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">2</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>@fat</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">3</th>
-                                  <td colspan="2">Larry the Bird</td>
-                                  <td>@twitter</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <strong class="card-title">Bordered Dark Table</strong>
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-bordered table-dark">
-                              <thead>
-                                <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">First</th>
-                                  <th scope="col">Last</th>
-                                  <th scope="col">Handle</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope="row">1</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">2</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>@fat</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">3</th>
-                                  <td colspan="2">Larry the Bird</td>
-                                  <td>@twitter</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-                </div>
-            </div><!-- .animated -->
         </div><!-- .content -->
 
 
@@ -504,12 +581,22 @@
 
     <!-- Right Panel -->
 
-
-    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-
-
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    function openAdvance(elm)
+    {
+        var getId = jQuery(elm).attr('data-hieu');
+        var name = "#"+getId;
+        if (jQuery(elm).prop("checked") === true) {
+            jQuery(name).removeClass('d-none');
+        } else {
+            jQuery(name).addClass('d-none');
+        }
+    }
+</script>
 </html>
